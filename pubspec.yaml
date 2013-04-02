@@ -1,0 +1,6 @@
+name: dart_texture_packer
+description: A sample web application
+dev_dependencies:
+  asset_pack:
+    git: https://github.com/johnmccutchan/asset_pack.git
+  browser: any
