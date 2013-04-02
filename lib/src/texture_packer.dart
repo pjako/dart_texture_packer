@@ -217,8 +217,8 @@ class TexturePacker {
   Map<String,Object> writeRect (Page page, Rect rect) {
     var map = new Map<String,Object>();
     map["name"] = rect.name;
-    //map["rotated"] = rect.rotated;
-    map["position"] = [page.x,page.y];
+    map["rotated"] = rect.rotated;
+    map["position"] = [(page.x + rect.x),(page.y + page.height - rect.height - rect.y)];
     map["width"] = rect.width;
     map["height"] = rect.height;
     if(rect.splits != null) {
